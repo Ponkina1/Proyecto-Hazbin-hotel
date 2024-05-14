@@ -1,0 +1,298 @@
+html {
+  scroll-behavior: smooth;
+ overflow-x: hidden;
+}
+
+body {
+  background-color: #270B3D;
+  /* Color de fondo para toda la página */
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-card {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+.product-image {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease;
+}
+
+/* Define las imágenes de fondo */
+#image1 {
+  background-image: url('imagen_normal.jpg');
+}
+
+#image1:hover {
+  background-image: url('imagen_hover.jpg');
+}
+
+.product-info {
+  height: 100px;
+  /* Altura fija para el contenedor de información */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.product-name {
+  font-size: 16px;
+  color: white;
+}
+
+/* Define las imágenes de fondo */
+#image1 {
+  background-image: url('/Ima/Cartas.png');
+}
+
+#image1:hover {
+  background-image: url('/Ima/Booster_Cards.png');
+  transition: 0.5s ease;
+
+}
+
+#image2 {
+  background-image: url('/Ima/Cards_View.png');
+}
+
+
+#image3 {
+  background-image: url('/Ima/Key_View.png');
+}
+
+#image3:hover {
+  background-image: url('/Ima/Key.png');
+  transition: 0.5s ease;
+
+}
+
+
+#image4 {
+  background-image: url('/Ima/Cajas.png');
+}
+
+#image4:hover {
+  background-image: url('/Ima/Llavero1.png');
+  transition: 0.5s ease;
+
+}
+
+#image5 {
+  background-image: url('/Ima/Llavero2.png');
+}
+
+#image6 {
+  background-image: url('/Ima/Llavero3.png');
+}
+
+#image7 {
+  background-image: url('/Ima/Llavero4.png');
+}
+
+#image8 {
+  background-image: url('/Ima/Llavero1.png');
+}
+
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+#faq {
+  text-align: center;
+  /* Centra todo el contenido */
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tablink {
+  background-color: #270B3D;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 30px;
+  text-align: left;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en dispositivos móviles */
+  }
+
+  .grid-item {
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+}
+
+
+.tablink:hover {
+  color: #FF0836;
+}
+
+.tablink.w3-border-red {
+  border-bottom: 4px solid #FF0836;
+}
+
+/* Estilos de las ciudades */
+.city {
+  display: none;
+}
+
+/* Estilos generales */
+.w3-container {
+  padding: 16px;
+}
+
+.w3-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Organiza los items en tres columnas */
+  gap: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+
+  background-color: #270B3D;
+  /* Color de fondo de los recuadros */
+  color: white;
+  text-align: center;
+  /* Alineación del texto */
+}
+
+/* Estilos para dispositivos de escritorio */
+#howto {
+  display: flex;
+  align-items: center;
+  background: #0E0415;
+  padding-bottom: 20px;
+}
+
+#howto div:nth-child(1) {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  max-width: 100%;
+  height: 500px;
+}
+
+#howto img {
+  width: 100%;
+  height: auto;
+}
+
+#howto p {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+#howto p strong {
+  font-weight: bold;
+}
+
+#howto a {
+  color: red;
+}
+
+/* Estilos para dispositivos móviles */
+
+
+
+#Video {
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente el contenido */
+  align-items: center;
+  /* Centra verticalmente el contenido */
+  height: 100vh;
+  /* Establece la altura al 100% del viewport */
+  background: #0E0415;
+  /* Ajusta el fondo según tu diseño */
+}
+
+.video-container {
+  max-width: 90%;
+  /* Ajusta el ancho máximo del contenedor del video */
+}
+
+
+#imagenfooter img {
+  width: 100vw;
+  height: 1000px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #imagenfooter img {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #Video {
+    margin-top: auto;
+  }
+
+  #howto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-container{
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  #howto div:nth-child(1) {
+    height: auto;
+    /* Cambia la altura de la imagen a automática */
+    margin-bottom: 20px;
+    /* Añade un margen inferior para separar la imagen del texto */
+  }
+}

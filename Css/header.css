@@ -1,0 +1,40 @@
+/* Estilos comunes para la sección del banner */
+#banner {
+    text-align: right;
+    background-color: #270B3D;
+}
+
+#banner img {
+    text-align: right;
+}
+
+/* Estilos para la imagen en PC */
+.image.pc {
+    display: block;
+    width: 100%;
+    height: 637.8px;
+}
+
+/* Estilos para la imagen en dispositivos móviles */
+.image.mobile {
+    display: none;
+    /* Oculta la imagen en dispositivos móviles */
+    width: 662;
+    height: 1074.05;
+}
+
+/* Media Query para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+
+    /* Estilos para la imagen en PC en dispositivos móviles */
+    .image.pc {
+        display: none;
+        /* Oculta la imagen en PC en dispositivos móviles */
+    }
+
+    /* Estilos para la imagen en dispositivos móviles */
+    .image.mobile {
+        display: block;
+        /* Muestra la imagen para dispositivos móviles */
+    }
+}

@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #FF0836;
+    text-align: center;
+}
+
+.footer img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

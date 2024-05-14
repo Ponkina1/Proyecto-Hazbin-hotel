@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="/Ima/LOGOHAZBIN.png" type="image/x-icon">
+  <title>Hazbin Hotel</title>
+  <link rel="stylesheet" href="Css/header.css" />
+  <link rel="stylesheet" href="Css/style.css" />
+  <link rel="stylesheet" href="Css/footer.css" />
+  <link rel="stylesheet" href="Css/nav.css" />
+
+</head>
+
+<body>
+  <section>
+    <button class="toggle" onclick="toggleNav()"><img src="/Ima/LOGOHAZBIN.png" alt=""></button>
+    <div class="sidenav" id="sidenav">
+      <a href="#banner">Home</a>
+      <a href="#tienda">Shop</a>
+      <a href="#howto">How to Watch</a>
+      <a href="#faq">FAQs</a>
+      <p>Hecho por Paula y Katherine</p>
+    </div>
+  </section>
+  
+
+  <section id="banner">
+    <img src="/Ima/TEXTVOXBANNER.png" alt="Banner for PC" class="image pc" />
+    <img src="/Ima/TEXTVOXBANNERCEL.png" alt="Banner for Mobile" class="image mobile" />
+  </section>
+
+
+  <section id="tienda">
+    <div class="container">
+      <div class="product-card">
+        <div class="product-image" id="image1"></div>
+        <div class="product-info">
+          <h2 class="product-name">HAZBIN HOTEL TRADING CARDS BOOSTER PACK</h2>
+          <span class="product-price">$6.00</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" id="image2"></div>
+        <div class="product-info">
+          <h2 class="product-name">HAZBIN HOTEL TRADING CARDS OFFICIAL CHECKLIST</h2>
+          <span class="product-price">FREE</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" id="image3"></div>
+        <div class="product-info">
+          <h2 class="product-name">HAZBIN HOTEL KEYCHAIN</h2>
+          <span class="product-price">$20.00</span>
+        </div>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-image" id="image4"></div>
+        <div class="product-info">
+          <h2 class="product-name">HAZBIN HOTEL PIN SET</h2>
+          <span class="product-price">$55.00</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" id="image5"></div>
+        <div class="product-info">
+          <h2 class="product-name">HAZBIN HOTEL ALASTOR PIN </h2>
+          <span class="product-price">$15.00</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" id="image6"></div>
+        <div class="product-info">
+          <h2 class="product-name">HAZBIN HOTEL ANGEL DUST PIN </h2>
+          <span class="product-price">$15.00</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" id="image7"></div>
+        <div class="product-info">
+          <h2 class="product-name">HAZBIN HOTEL CHARLIE PIN </h2>
+          <span class="product-price">$15.00</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" id="image8"></div>
+        <div class="product-info">
+          <h2 class="product-name">HAZBIN HOTEL VAGGIE PIN </h2>
+          <span class="product-price">$15.00</span>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <section id="howto">
+      <div>
+        <img src="/Ima/HOWTOWATCH.png" />
+      </div>
+      <div>
+        <p><strong>You’re in luck. The first two episodes are now available on the <a href="">A24 App</a>.</strong>
+          <br>
+          And the gates to hell are officially open. Watch Season One now on <a href="">Prime Video</a>.
+          <br>
+          Enjoy 😈
+        </p>
+      </div>
+    </section>
+
+    <section id="Video">
+      <div class="video-container">
+        <video width="100%" controls>
+          <source src="Ima/video.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+    </section>
+
+
+    <section id="faq">
+      <div class="w3-container">
+        <img src="/Ima/FAQs.png" alt="Banner for PC" class="image pc" />
+
+        <div class="w3-row">
+          <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+            <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">GENERAL</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+            <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">SHIPPING</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+            <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">WATCH</div>
+          </a>
+        </div>
+
+
+
+        <div id="London" class="w3-container city">
+          <div class="grid-container">
+            <div class="grid-item">
+              <h1>What payment methods do you accept?</h1>
+              <p>We accept Visa, Mastercard, Amex, Discover, JCB, Diners Club, PayPal, and Google Pay. Payment must be
+                successfully completed before we can process your order.</p>
+            </div>
+            <div class="grid-item">
+              <h1>I didn't get a confirmation email. What do I do?</h1>
+              <p>Email us at shop@hazbinhotel.com. It’s possible your payment was not successfully processed, one of the
+                items in your cart is out of stock, or there was an issue with your email address.</p>
+            </div>
+
+            <div class="grid-item">
+              <h1>What do I do if I have another question or issue?</h1>
+              <p>Email us at shop@hazbinhotel.com. Please include your order number in the subject line if you have one.
+              </p>
+            </div>
+            <div class="grid-item">
+              <h1>I cancel my order?</h1>
+              <p>We can cancel your order as long as it hasn’t already shipped. If you would like to make a change,
+                please email us as soon as possible at shop@hazbinhotel.com and include your order number in the subject
+                line.</p>
+            </div>
+            <div class="grid-item">
+              <h1>Can I exchange or return my order?</h1>
+              <p>We do not accept exchanges or returns. If you have an issue with your order, please email us as soon as
+                possible at shop@hazbinhotel.com, and include your order number in the subject line, and we will try out
+                best to find a solution.</p>
+            </div>
+            <div class="grid-item">
+              <h1>How long does the refund take to process?</h1>
+              <p>It usually takes 5 to 10 business days for a refund to be credited back to your account. We can only
+                issue a refund to the original payment method.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="Paris" class="w3-container city" style="display:none">
+          <div class="grid-container">
+            <div class="grid-item">
+              <h1>How much does shipping cost?</h1>
+              <p>US shipping for orders costs $6.66.
+
+                International shipping varies by country and is calculated at checkout
+
+                Iceland shipments are subject to additional duties and taxes upon delivery</p>
+            </div>
+            <div class="grid-item">
+              <h1>What is the status of my order?</h1>
+              <p>Once shipped, domestic orders can take up to 4-5 business days to arrive and 9-16 days for
+                international orders.
+
+                Check the status of your order via the tracking link provided in your shipping email.</p>
+            </div>
+            <div class="grid-item">
+              <h1>I messed up my address! Can I fix it?</h1>
+              <p>Email us as soon as possible at shop@hazbinhotel.com with your order number and the correct address. We
+                can update your address as long as your order hasn’t already shipped. Unfortunately, once your order has
+                shipped, we are unable to make changes.</p>
+            </div>
+            <div class="grid-item">
+              <h1>Where do you ship?</h1>
+              <p>We currently ship to Australia, Austria, Argentina, Belgium, Bolivia, Brazil, Bulgaria, Canada, Chile,
+                China, Colombia, Costa Rica, Croatia, Cyprus, Czechia, Denmark, Dominican Republic, Egypt, Estonia,
+                Finland, France, Germany, Greece, Guatemala, Haiti, Hong Kong, Hungary, Iceland, India, Indonesia,
+                Ireland, Israel, Italy, Jamaica, Japan, Latvia, Lithuania, Luxembourg, Malaysia, Malta, Mexico, Monaco,
+                Morocco, Netherlands, New Zealand, Norway, Panama, Paraguay, Philippines, Poland, Portugal, Romania,
+                Singapore, Slovakia, Slovenia, South Africa, South Korea, Spain, Sweden, Switzerland, Taiwan, Thailand,
+                Turkey, United Arab Emirates, United Kingdom, the United States, and Uruguay.
+
+                Additional customs and import taxes or fees may apply to international orders. These fees are calculated
+                and due at checkout. Don't see your country? Tell us where you're from at shop@hazbinhotel.com.</p>
+            </div>
+            <div class="grid-item">
+              <h1>My order says it's been delivered, but I haven't received anything. What should I do?</h1>
+              <p>We are not responsible for items that are lost or stolen, but email us at shop@hazbinhotel.com and we
+                will try to figure out a solution. Please include your order number in the subject line if you have one.
+              </p>
+            </div>
+            <div class="grid-item">
+              <h1>What do I do if I have another question or i ssue?</h1>
+              <p>Email us at shop@hazbinhotel.com. Please include your order number in the subject line if you have one.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="Tokyo" class="w3-container city" style="display:none">
+          <div class="grid-container1">
+            <div class="grid-item">
+              <h1>Where can I watch the early access episodes and Q&A?</h1>
+              <p>You can watch episodes 1 & 2, and Q&A now.​ If you don’t already have an A24 account, create one using
+                the email you used to order your Hazbin merch, https://account.a24films.com/signup. Download the A24 app
+                on iOS. If you don't have an iOS device or are outside of the US, you can also access the app by
+                visiting https://app.a24films.com. Log in using your A24 account. The first two episodes and the Q&A
+                will appear in Your Library: https://app.a24films.com/tabs/library</p>
+            </div>
+            <div class="grid-item">
+              <h1>I didn’t preorder early access. Can I still watch?</h1>
+              <p>Yes, you can buy the first two episodes and a special Q&A in the A24 App.
+                https://app.a24films.com/product/339</p>
+            </div>
+            <div class="grid-item">
+              <h1>Where can I watch the rest of Season 1?</h1>
+              <p>You can enjoy the rest of the season on Prime Video. Watch Now. https://www.amazon.com/dp/B0CLM8SM8T
+              </p>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="imagenfooter">
+      <img src="/Ima/Footer.png" alt="Avatar" />
+    </section>
+
+    <footer>
+      <img src="/Ima/Footer1.png" alt="Avatar" />
+      <img src="/Ima/Footer2.png" alt="Avatar" />
+    </footer>
+
+    
+    <script src="/Js/script.js"></script>
+</body>
+
+</html>
